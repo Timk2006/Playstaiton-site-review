@@ -1,0 +1,108 @@
+body {
+    padding: 50px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.logo {
+    width: 130px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+img {
+    width: 110px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #004d4d;
+    color: white;
+    padding: 10px;
+}
+
+tr {
+    background-color: #65b68a;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+td.omschrijving {
+    color: dimgrey;
+    width: 11%;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+form div {
+    margin-bottom: 10px;
+    display: flex;
+}
+.rating-stars-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: fit-content;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    font-size: 40px;
+    color: gray;
+    transition: color 0.2s ease-in-out;
+}
+
+label:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f005'; /* Lege ster */
+    font-weight: 400;
+}
+
+input[type="radio"]:checked ~ label:before {
+    font-weight: 900; /* Gevulde ster */
+    color: gold;
+}
+
+.rating-stars-wrapper label:hover:before,
+.rating-stars-wrapper label:hover ~ label:before {
+    font-weight: 900;
+    color: gold;
+}
